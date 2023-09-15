@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*공통*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*****상단 배너 슬라이드*****/
+#banner {
+  background: #f2f2f2;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 40px auto;
+  display: flex;
+  padding: 70px 0;
+  position: relative;
+  border: 1px solid red;
+}
+#banner h2 {
+  display: none;
+}
+#slide {
+  display: flex;
+  position: relative;
+  left: -400px;
+  width: 2000px;
+}
+
+#slide a {
+  filter: brightness(80%);
+  transition: 0.3s;
+  width: 400px;
+  padding: 20px;
+}
+#slide a.act {
+  transform: scale(1.2);
+  box-shadow: 1px 1px 5px black;
+  filter: brightness(100%);
+  z-index: 1;
+  background: white;
+}
+
+#slide img {
+  width: 100%;
+  display: block;
+}
